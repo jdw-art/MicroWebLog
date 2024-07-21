@@ -20,6 +20,7 @@
     <module>weblog-framework</module>
     <module>weblog-gateway</module>
     <module>weblog-oss</module>
+      <module>weblog-admin</module>
   </modules>
 
   <properties>
