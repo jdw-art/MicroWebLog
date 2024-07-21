@@ -111,5 +111,16 @@
             <artifactId>weblog-spring-bot-starter-biz-context</artifactId>
             <version>${revision}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.jacob.weblog</groupId>
+            <artifactId>weblog-spring-boot-starter-jackson</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+        </dependency>
     </dependencies>
 </project>
