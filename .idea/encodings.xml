@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/weblog-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/weblog-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/weblog-spring-boot-starter-biz-operationlog/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/weblog-spring-boot-starter-biz-operationlog/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/weblog-spring-boot-starter-jackson/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/weblog-spring-boot-starter-jackson/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/weblog-spring-bot-starter-biz-context/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/weblog-spring-bot-starter-biz-context/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/webook-spring-boot-starter-jackson/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-framework/webook-spring-boot-starter-jackson/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-oss/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-oss/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-oss/weblog-oss-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-oss/weblog-oss-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-oss/weblog-oss-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblog-oss/weblog-oss-biz/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
