@@ -21,5 +21,6 @@
         <module>weblog-spring-boot-starter-biz-operationlog</module>
         <module>weblog-spring-boot-starter-jackson</module>
         <module>weblog-spring-bot-starter-biz-context</module>
+        <module>weblog-search</module>
     </modules>
 </project>
