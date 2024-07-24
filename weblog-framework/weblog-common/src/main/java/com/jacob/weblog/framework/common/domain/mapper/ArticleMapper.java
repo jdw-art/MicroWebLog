@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jacob.weblog.framework.common.domain.dataobject.ArticleDO;
 import com.jacob.weblog.framework.common.domain.dataobject.ArticlePublishCountDO;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import java.time.LocalDate;
@@ -122,7 +123,7 @@ public interface ArticleMapper extends BaseMapper<ArticleDO> {
             "FROM t_article\n" +
             "WHERE create_time >= #{startDate} AND create_time < #{endDate}\n" +
             "GROUP BY DATE(create_time)")
-    List<ArticlePublishCountDO> selectDateArticlePublishCount(LocalDate startDate, LocalDate endDate);
+    List<ArticlePublishCountDO> selectDateArticlePublishCount(@Param("startDate")LocalDate startDate, @Param("endDate") LocalDate endDate);
 
     /**
      * 查询最大权重值记录
