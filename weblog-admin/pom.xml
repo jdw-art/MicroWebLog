@@ -122,5 +122,11 @@
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.jacob.weblog</groupId>
+            <artifactId>weblog-search</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 </project>
