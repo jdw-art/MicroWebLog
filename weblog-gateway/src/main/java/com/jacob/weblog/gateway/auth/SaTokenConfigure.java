@@ -33,6 +33,7 @@ public class SaTokenConfigure {
                     // 登录校验
                     SaRouter.match("/**") // 拦截所有路由
                             .notMatch("/auth/login") // 排除登录接口
+                            .notMatch("/web/**")     // 排除前台路由
                             .check(r -> StpUtil.checkLogin()) // 校验是否登录
                     ;
 
