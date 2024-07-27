@@ -15,7 +15,7 @@
 
 ## 相关地址
 
-- GitHub 地址：[https://github.com/jdw-art/WebLog](https://github.com/jdw-art/WebLog)
+- GitHub 地址：https://github.com/jdw-art/MicroWebLog
 - 演示地址：http://110.41.141.141/#/
 
 ### 后端项目模块介绍
