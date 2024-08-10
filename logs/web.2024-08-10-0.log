@@ -1,0 +1,60 @@
+2024-08-10 16:32:22.405 [Thread-9] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2024-08-10 16:32:22.405 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-08-10 16:32:36.009 [Thread-9] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2024-08-10 16:32:57.751 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2024-08-10 16:34:38.762 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [8b5def0d-a19a-4e3e-8e9e-b9956bdc72df_config-0] Server healthy check fail, currentConnection = 1722077603984_127.0.0.1_62814
+2024-08-10 16:34:44.206 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [8b5def0d-a19a-4e3e-8e9e-b9956bdc72df_config-0] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-08-10 16:34:51.534 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-08-10 16:35:04.015 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 127.0.0.1 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 6 milliseconds, 469700 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@274db7af[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@3d7a6637, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6df04fbe, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@3bbdd6a2}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-10 16:35:33.042 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-08-10 16:35:34.462 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [8b5def0d-a19a-4e3e-8e9e-b9956bdc72df_config-0] Success to connect a server [127.0.0.1:8848], connectionId = 1723278933868_127.0.0.1_58869
+2024-08-10 16:35:34.462 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [8b5def0d-a19a-4e3e-8e9e-b9956bdc72df_config-0] Abandon prev connection, server is 127.0.0.1:8848, connectionId is 1722077603984_127.0.0.1_62814
+2024-08-10 16:35:34.476 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - Close current connection 1722077603984_127.0.0.1_62814
+2024-08-10 16:35:34.600 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [8b5def0d-a19a-4e3e-8e9e-b9956bdc72df_config-0] Notify disconnected event to listeners
+2024-08-10 16:35:34.635 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [8b5def0d-a19a-4e3e-8e9e-b9956bdc72df_config-0] DisConnected,clear listen context...
+2024-08-10 16:35:34.898 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [8b5def0d-a19a-4e3e-8e9e-b9956bdc72df_config-0] Notify connected event to listeners.
+2024-08-10 16:35:34.899 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [8b5def0d-a19a-4e3e-8e9e-b9956bdc72df_config-0] Connected,notify listen context...
+2024-08-10 16:35:37.719 [nacos-grpc-client-executor-127.0.0.1-240054] INFO  com.alibaba.nacos.common.remote.client - [8b5def0d-a19a-4e3e-8e9e-b9956bdc72df_config-0] Receive server push request, request = ClientDetectionRequest, requestId = 12
+2024-08-10 16:35:37.719 [nacos-grpc-client-executor-127.0.0.1-240054] INFO  com.alibaba.nacos.common.remote.client - [8b5def0d-a19a-4e3e-8e9e-b9956bdc72df_config-0] Ack server push request, request = ClientDetectionRequest, requestId = 12
+2024-08-10 16:35:37.896 [nacos-grpc-client-executor-127.0.0.1-240054] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - [1722077603984_127.0.0.1_62814]Ignore complete event,isRunning:true,isAbandon=true
+2024-08-10 16:35:40.234 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-08-10 16:35:40.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] weblog deregistering service weblog-web with instance: Instance{instanceId='null', ip='10.12.42.234', port=8088, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2024-08-10 16:35:40.633 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-08-10 16:35:40.637 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2024-08-10 16:35:40.638 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2024-08-10 16:35:40.666 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2024-08-10 16:35:40.679 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2024-08-10 16:35:40.679 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2024-08-10 16:35:40.679 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2024-08-10 16:35:40.679 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2024-08-10 16:35:40.679 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2024-08-10 16:35:40.679 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2024-08-10 16:35:40.729 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2024-08-10 16:35:40.729 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2024-08-10 16:35:40.730 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2024-08-10 16:35:40.730 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2024-08-10 16:35:40.730 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2024-08-10 16:35:40.730 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2024-08-10 16:35:40.730 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2024-08-10 16:35:40.730 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@7731150e[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2024-08-10 16:35:40.730 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Close current connection 1722077610287_127.0.0.1_62833
+2024-08-10 16:35:40.775 [nacos-grpc-client-executor-127.0.0.1-239997] WARN  c.a.nacos.common.remote.client.grpc.GrpcClient - [1722077610287_127.0.0.1_62833]Ignore error event,isRunning:false,isAbandon=false
+2024-08-10 16:35:41.346 [SpringApplicationShutdownHook] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@69a4f872[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 239998]
+2024-08-10 16:35:41.346 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@3bf3cf61[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 399536]
+2024-08-10 16:35:41.525 [SpringApplicationShutdownHook] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+2024-08-10 16:35:41.555 [SpringApplicationShutdownHook] INFO  c.a.n.client.auth.ram.identify.CredentialService - [null] CredentialService is freed
+2024-08-10 16:35:41.649 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2024-08-10 16:35:42.773 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-08-10 16:35:43.599 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
