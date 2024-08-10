@@ -16,6 +16,18 @@ spring:
             - Path=/admin/**
           filters:
             - StripPrefix=1
+        - id: web
+          uri: lb://weblog-web
+          predicates:
+            - Path=/web/**
+          filters:
+            - StripPrefix=1
+        - id: oss
+          uri: lb://weblog-oss
+          predicates:
+            - Path=/oss/**
+          filters:
+            - StripPrefix=1
   data:
     redis:
       database: 0 # Redis 数据库索引（默认为 0）
