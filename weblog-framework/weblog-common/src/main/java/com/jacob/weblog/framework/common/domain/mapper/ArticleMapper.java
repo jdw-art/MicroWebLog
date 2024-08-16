@@ -113,6 +113,10 @@ public interface ArticleMapper extends BaseMapper<ArticleDO> {
                 .select(ArticleDO::getReadNum));
     }
 
+    /**
+     * 查询所有文章 ID 和阅读量
+     * @return
+     */
     default List<ArticleDO> selectAllArticleIdAndReadNum() {
         // 设置仅查询 read_num 字段
         return selectList(Wrappers.<ArticleDO>lambdaQuery()
