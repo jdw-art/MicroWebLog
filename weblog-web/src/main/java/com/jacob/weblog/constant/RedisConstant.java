@@ -40,6 +40,7 @@ public class RedisConstant {
      */
     public static String getSortDayKey() {
         return SORT_DAY_PREFIX + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+
     }
 
     /**
