@@ -113,6 +113,12 @@ public interface ArticleMapper extends BaseMapper<ArticleDO> {
                 .select(ArticleDO::getReadNum));
     }
 
+    default List<ArticleDO> selectAllArticleIdAndReadNum() {
+        // 设置仅查询 read_num 字段
+        return selectList(Wrappers.<ArticleDO>lambdaQuery()
+                .select(ArticleDO::getId, ArticleDO::getReadNum));
+    }
+
     /**
      * 按日分组，并统计每日发布的文章数量
      * @param startDate
